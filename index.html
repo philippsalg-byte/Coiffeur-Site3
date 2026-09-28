@@ -1,0 +1,1310 @@
+<!doctype html>
+<html lang="de" class="scroll-smooth bg-neutral-950 text-neutral-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voluma Hair – Bespoke Barber & Haute Coiffure Bern</title>
+    <meta
+      name="description"
+      content="Voluma Hair – Exklusiver Barbershop & Haute Coiffure Salon im Zentrum von Bern. Präzisionsschnitte, Bartzeremonien, Colorationen und stilvoller Fussweg-Guide."
+    />
+    <meta property="og:title" content="Voluma Hair – Bespoke Barber & Haute Coiffure Bern" />
+    <meta
+      property="og:description"
+      content="Premium Dark Mode Salon & Barbershop mitten in Bern. Galerie, Top-Dienstleistungen und interaktiver Lageplan mit Fussweg."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts: Cinzel & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Outfit:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              charcoal: {
+                950: '#070708',
+                900: '#0d0e11',
+                850: '#121418',
+                800: '#171a20',
+                700: '#232731',
+                600: '#343a46',
+              },
+              aurum: {
+                50: '#fbf8ee',
+                100: '#f5efd2',
+                200: '#ecdda3',
+                300: '#dfc46f',
+                400: '#d1aa44',
+                500: '#c59b27',
+                600: '#ab7f1d',
+                700: '#895e19',
+                800: '#724b1a',
+                900: '#613e1a',
+              },
+              copper: {
+                400: '#d97d54',
+                500: '#c26237',
+                600: '#a64a23',
+              },
+            },
+            fontFamily: {
+              cinzel: ['"Cinzel"', 'Georgia', 'serif'],
+              sans: ['"Outfit"', 'system-ui', '-apple-system', 'sans-serif'],
+            },
+            letterSpacing: {
+              widest2: '0.3em',
+              ultra: '0.45em',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      ::selection {
+        background-color: #d1aa44;
+        color: #070708;
+      }
+      /* Custom fine gold borders & glow */
+      .gold-glow {
+        box-shadow: 0 0 35px -8px rgba(209, 170, 68, 0.28);
+      }
+      /* Subtle noise pattern */
+      .noise-bg {
+        background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+        background-size: 24px 24px;
+      }
+      /* Premium Dark Mode Filter for Google Maps Embed */
+      .dark-map-frame {
+        filter: invert(90%) hue-rotate(180deg) brightness(85%) contrast(115%);
+        transition: filter 0.3s ease;
+      }
+      .dark-map-frame:hover {
+        filter: invert(86%) hue-rotate(180deg) brightness(90%) contrast(110%);
+      }
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #070708;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #232731;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #d1aa44;
+      }
+    </style>
+  </head>
+  <body class="bg-charcoal-950 text-neutral-200 font-sans antialiased selection:bg-aurum-400 selection:text-charcoal-950">
+    
+    <!-- Top Barber Sub-Header -->
+    <div class="border-b border-white/5 bg-charcoal-900/80 backdrop-blur text-xs tracking-ultra uppercase text-neutral-400 py-2.5 px-6">
+      <div class="max-w-7xl mx-auto flex items-center justify-between text-[10px]">
+        <div class="flex items-center gap-3">
+          <span class="inline-block w-1.5 h-1.5 rounded-full bg-aurum-400 animate-pulse"></span>
+          <span class="text-neutral-300 font-light">Voluma Hair Bespoke Barbershop & Atelier Bern</span>
+        </div>
+        <div class="hidden sm:flex items-center gap-6">
+          <span class="text-neutral-500">Kramgasse / Bärenplatz &bull; 4 Min. ab Hbf Bern</span>
+          <span class="text-aurum-400 font-medium">Exklusiver Salonbetrieb</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 bg-charcoal-950/90 backdrop-blur-md border-b border-white/5">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 h-24 flex items-center justify-between">
+        
+        <!-- Logo -->
+        <a href="#" class="group flex flex-col focus:outline-none">
+          <div class="flex items-center gap-2.5">
+            <span class="w-2.5 h-2.5 bg-aurum-400 rotate-45 group-hover:bg-aurum-300 transition-colors"></span>
+            <span class="font-cinzel text-2xl lg:text-3xl font-bold tracking-[0.25em] text-white group-hover:text-aurum-400 transition-colors">
+              VOLUMA
+            </span>
+          </div>
+          <span class="text-[9px] tracking-ultra uppercase text-aurum-400/90 font-medium pl-5 -mt-0.5">
+            HAIR &bull; BERN ZENTRUM
+          </span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-9 text-xs tracking-widest2 uppercase text-neutral-400 font-light">
+          <a href="#services" class="hover:text-aurum-400 transition-colors">Dienstleistungen</a>
+          <a href="#craft" class="hover:text-aurum-400 transition-colors">Handwerk</a>
+          <a href="#galerie" class="hover:text-aurum-400 transition-colors">Galerie</a>
+          <a href="#anreise" class="hover:text-aurum-400 transition-colors">Anreise & Karte</a>
+          <a href="#kontakt" class="hover:text-aurum-400 transition-colors">Kontakt</a>
+        </nav>
+
+        <!-- Header CTA -->
+        <div class="hidden md:flex items-center gap-6">
+          <button
+            onclick="openBookingModal()"
+            class="relative group px-6 py-2.5 text-xs tracking-widest uppercase font-semibold text-charcoal-950 bg-gradient-to-r from-aurum-300 via-aurum-400 to-aurum-500 hover:from-aurum-200 hover:to-aurum-400 transition-all duration-300 shadow-lg shadow-aurum-400/10 cursor-pointer active:scale-95"
+          >
+            <span>Termin Anfragen</span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button
+          id="mobileMenuBtn"
+          aria-label="Menü öffnen"
+          class="lg:hidden p-2 text-neutral-300 hover:text-aurum-400 focus:outline-none"
+          onclick="toggleMobileMenu()"
+        >
+          <svg id="hamburgerIcon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+          <svg id="closeIcon" class="hidden w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown -->
+      <div id="mobileMenu" class="hidden lg:hidden bg-charcoal-900 border-b border-white/10 px-8 py-8 space-y-5">
+        <a href="#services" onclick="closeMobileMenu()" class="block text-xs tracking-widest2 uppercase text-neutral-300 hover:text-aurum-400 py-1">Dienstleistungen</a>
+        <a href="#craft" onclick="closeMobileMenu()" class="block text-xs tracking-widest2 uppercase text-neutral-300 hover:text-aurum-400 py-1">Handwerk</a>
+        <a href="#galerie" onclick="closeMobileMenu()" class="block text-xs tracking-widest2 uppercase text-neutral-300 hover:text-aurum-400 py-1">Galerie</a>
+        <a href="#anreise" onclick="closeMobileMenu()" class="block text-xs tracking-widest2 uppercase text-neutral-300 hover:text-aurum-400 py-1">Anreise & Fussweg Karte</a>
+        <a href="#kontakt" onclick="closeMobileMenu()" class="block text-xs tracking-widest2 uppercase text-neutral-300 hover:text-aurum-400 py-1">Kontakt & Salon</a>
+        <div class="pt-4 border-t border-white/10">
+          <button
+            onclick="closeMobileMenu(); openBookingModal();"
+            class="w-full py-3 text-xs tracking-widest uppercase font-semibold text-charcoal-950 bg-aurum-400 hover:bg-aurum-300 transition-colors"
+          >
+            Termin reservieren
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- DUNKLE, GROSSFLÄCHIGE HERO-SEKTION -->
+      <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden border-b border-white/5 noise-bg">
+        <!-- Abgedunkeltes Hintergrundbild mit mehreren Vignetten & Masken -->
+        <div class="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=2000&q=85"
+            alt="Edler Barbershop Salon Voluma Hair Bern"
+            class="w-full h-full object-cover object-center filter grayscale brightness-[0.22] contrast-[1.25] scale-105"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/80 to-charcoal-950/60"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-charcoal-950 via-transparent to-charcoal-950"></div>
+          <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-aurum-400/5 rounded-full blur-[120px] pointer-events-none"></div>
+        </div>
+
+        <!-- Hero Content mit markanter Typografie -->
+        <div class="relative z-10 max-w-5xl mx-auto px-6 sm:px-10 py-24 text-center">
+          
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-3 px-4 py-1.5 border border-aurum-400/30 bg-charcoal-900/60 backdrop-blur mb-8">
+            <span class="w-1.5 h-1.5 bg-aurum-400"></span>
+            <span class="text-[10px] tracking-ultra uppercase text-aurum-300 font-medium">
+              Bespoke Barbering & Hair Design &bull; Bern Zentrum
+            </span>
+            <span class="w-1.5 h-1.5 bg-aurum-400"></span>
+          </div>
+
+          <!-- Markante Hero-Headline -->
+          <h1 class="font-cinzel text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-[0.08em] uppercase text-white leading-[1.08] mb-8">
+            PRÄZISION.<br />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-aurum-200 via-aurum-400 to-copper-400">
+              CHARAKTER.
+            </span><br />
+            KULTUR.
+          </h1>
+
+          <!-- Feine Trennlinie mit Raute -->
+          <div class="flex items-center justify-center gap-4 my-8 max-w-xs mx-auto">
+            <div class="h-[1px] flex-1 bg-gradient-to-r from-transparent to-aurum-400/60"></div>
+            <div class="w-2 h-2 rotate-45 border border-aurum-400 bg-charcoal-950"></div>
+            <div class="h-[1px] flex-1 bg-gradient-to-l from-transparent to-aurum-400/60"></div>
+          </div>
+
+          <!-- Beschreibungstext -->
+          <p class="max-w-2xl mx-auto text-sm sm:text-base text-neutral-400 font-light leading-relaxed tracking-wide mb-12">
+            Voluma Hair definiert die Kunst des Barberings und der modernen Haute Coiffure neu. Kompromisslose Scherenführung, traditionelle Rasiermessertechniken und massgeschneiderte Colorationen im Herzen der Berner Altstadt.
+          </p>
+
+          <!-- Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+            <button
+              onclick="openBookingModal()"
+              class="w-full sm:w-auto px-10 py-4 text-xs tracking-widest uppercase font-bold text-charcoal-950 bg-gradient-to-r from-aurum-300 via-aurum-400 to-aurum-500 hover:from-aurum-200 hover:to-aurum-400 transition-all duration-300 shadow-xl shadow-aurum-400/20 hover:scale-102 active:scale-98 cursor-pointer"
+            >
+              <span>Jetzt Platz reservieren</span>
+            </button>
+
+            <a
+              href="#anreise"
+              class="w-full sm:w-auto px-9 py-4 text-xs tracking-widest uppercase font-medium text-neutral-300 hover:text-white border border-white/15 hover:border-aurum-400/60 bg-charcoal-900/40 hover:bg-charcoal-900/80 transition-all duration-300 flex items-center justify-center gap-2"
+            >
+              <svg class="w-4 h-4 text-aurum-400" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span>Fussweg & Karte</span>
+            </a>
+          </div>
+
+          <!-- Hero Bottom Indicators -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-16 mt-16 border-t border-white/5 text-left">
+            <div class="border-l border-aurum-400/40 pl-4">
+              <div class="text-[10px] tracking-widest uppercase text-neutral-500">Standort</div>
+              <div class="font-cinzel text-lg text-neutral-100 font-semibold mt-0.5">Bern Zentrum</div>
+            </div>
+            <div class="border-l border-aurum-400/40 pl-4">
+              <div class="text-[10px] tracking-widest uppercase text-neutral-500">Handwerk</div>
+              <div class="font-cinzel text-lg text-neutral-100 font-semibold mt-0.5">Master Barbers</div>
+            </div>
+            <div class="border-l border-aurum-400/40 pl-4">
+              <div class="text-[10px] tracking-widest uppercase text-neutral-500">Anreise</div>
+              <div class="font-cinzel text-lg text-neutral-100 font-semibold mt-0.5">4 Min. ab Hbf</div>
+            </div>
+            <div class="border-l border-aurum-400/40 pl-4">
+              <div class="text-[10px] tracking-widest uppercase text-neutral-500">Tradition</div>
+              <div class="font-cinzel text-lg text-neutral-100 font-semibold mt-0.5">Hot Towel Shave</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ASYMMETRISCHE DARSTELLUNG DER TOP-DIENSTLEISTUNGEN (01, 02, 03) -->
+      <section id="services" class="py-28 px-6 lg:px-12 max-w-7xl mx-auto border-b border-white/5">
+        
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 mb-3">
+              <span class="w-6 h-[1px] bg-aurum-400"></span>
+              <span class="text-[10px] tracking-ultra uppercase text-aurum-400 font-semibold">Signature Menu</span>
+            </div>
+            <h2 class="font-cinzel text-3xl sm:text-5xl font-bold tracking-wide text-white uppercase">
+              Top-Dienstleistungen
+            </h2>
+          </div>
+          <p class="text-xs text-neutral-400 tracking-widest uppercase font-light max-w-sm">
+            Drei Säulen meisterhafter Salon- & Barbershop-Kultur in vollendeter Ausführung.
+          </p>
+        </div>
+
+        <!-- Asymmetrisches Grid Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- SERVICE 01: SCHNITT (Grossformatig / 7 Spalten) -->
+          <div class="lg:col-span-7 relative group bg-gradient-to-br from-charcoal-900 to-charcoal-950 border border-white/10 hover:border-aurum-400/50 p-8 sm:p-12 overflow-hidden transition-all duration-500 flex flex-col justify-between">
+            <span class="absolute -top-10 -right-6 font-cinzel text-[130px] sm:text-[180px] font-black text-white/[0.03] group-hover:text-aurum-400/[0.08] select-none transition-colors duration-500 pointer-events-none">
+              01
+            </span>
+
+            <div class="relative z-10 space-y-6">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] tracking-ultra uppercase text-aurum-400 font-semibold">
+                  Fundament & Präzision
+                </span>
+                <span class="text-xs font-mono text-neutral-400 tracking-wider">
+                  ab CHF 68.–
+                </span>
+              </div>
+
+              <h3 class="font-cinzel text-2xl sm:text-4xl font-bold text-white tracking-wide group-hover:text-aurum-300 transition-colors">
+                Präzisionsschnitt & Fade
+              </h3>
+
+              <p class="text-sm text-neutral-400 font-light leading-relaxed max-w-lg">
+                Vom millimetergenauen Skin Fade über strukturierte Scissor-Cuts bis hin zu klassischen Konturen. Jeder Schnitt wird exakt an Schädelform, Haarwuchsrichtung und persönlichen Charakter angepasst. Inklusive doppelter Haarwäsche, Nackenrasur mit Klinge und warmer Kräuter-Kompresse.
+              </p>
+
+              <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-neutral-300 font-light">
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-aurum-400 rotate-45"></span>
+                  <span>Skin Fade & Taper Precision</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-aurum-400 rotate-45"></span>
+                  <span>Traditionelle Nacken-Klingenrasur</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-aurum-400 rotate-45"></span>
+                  <span>Hot Towel & Tonic Treatment</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-aurum-400 rotate-45"></span>
+                  <span>Klassischer Schnitt & Texturierung</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative z-10 pt-10 mt-6 border-t border-white/5 flex items-center justify-between">
+              <span class="text-[11px] text-neutral-500 uppercase tracking-widest font-mono">Dauer: ca. 45-60 Min.</span>
+              <button
+                onclick="openBookingModal('Schnitt')"
+                class="inline-flex items-center gap-2 text-xs tracking-widest uppercase font-semibold text-aurum-400 hover:text-aurum-300 group-hover:translate-x-1 transition-all"
+              >
+                <span>Auswählen</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- SERVICE 02: COLORATION (Kompakt / 5 Spalten) -->
+          <div class="lg:col-span-5 relative group bg-gradient-to-br from-charcoal-900 to-charcoal-950 border border-white/10 hover:border-aurum-400/50 p-8 sm:p-12 overflow-hidden transition-all duration-500 flex flex-col justify-between">
+            <span class="absolute -top-10 -right-6 font-cinzel text-[130px] sm:text-[180px] font-black text-white/[0.03] group-hover:text-aurum-400/[0.08] select-none transition-colors duration-500 pointer-events-none">
+              02
+            </span>
+
+            <div class="relative z-10 space-y-6">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] tracking-ultra uppercase text-aurum-400 font-semibold">
+                  Tiefe & Nuancen
+                </span>
+                <span class="text-xs font-mono text-neutral-400 tracking-wider">
+                  ab CHF 140.–
+                </span>
+              </div>
+
+              <h3 class="font-cinzel text-2xl sm:text-3xl font-bold text-white tracking-wide group-hover:text-aurum-300 transition-colors">
+                Custom Coloration & Grey Blending
+              </h3>
+
+              <p class="text-sm text-neutral-400 font-light leading-relaxed">
+                Mühelos natürliche Farbergebnisse ohne Helmeffekt: Maskulines Grau-Blending, feine Balayage-Lichtreflexe oder kühle Matt-Nuancen. Verwendung ammoniakfreier, haarschonender Formulierungen.
+              </p>
+
+              <div class="pt-2 space-y-2 text-xs text-neutral-300 font-light">
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-aurum-400 rotate-45"></span>
+                  <span>Diskrete Grauabdeckung (5-Minuten Blending)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-aurum-400 rotate-45"></span>
+                  <span>Glossing & Farbauffrischung</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-aurum-400 rotate-45"></span>
+                  <span>Individuelle Balayage & Freihandtechnik</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative z-10 pt-10 mt-6 border-t border-white/5 flex items-center justify-between">
+              <span class="text-[11px] text-neutral-500 uppercase tracking-widest font-mono">Dauer: ca. 60-90 Min.</span>
+              <button
+                onclick="openBookingModal('Coloration')"
+                class="inline-flex items-center gap-2 text-xs tracking-widest uppercase font-semibold text-aurum-400 hover:text-aurum-300 group-hover:translate-x-1 transition-all"
+              >
+                <span>Auswählen</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- SERVICE 03: STYLING & BARTPFLEGE (Grossformatig über 12 Spalten) -->
+          <div class="lg:col-span-12 relative group bg-gradient-to-br from-charcoal-900 to-charcoal-950 border border-white/10 hover:border-aurum-400/50 p-8 sm:p-12 overflow-hidden transition-all duration-500">
+            <span class="absolute -top-12 right-12 font-cinzel text-[140px] sm:text-[220px] font-black text-white/[0.03] group-hover:text-aurum-400/[0.08] select-none transition-colors duration-500 pointer-events-none">
+              03
+            </span>
+
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div class="lg:col-span-7 space-y-4">
+                <div class="flex items-center gap-4">
+                  <span class="text-[10px] tracking-ultra uppercase text-aurum-400 font-semibold">
+                    Ritual & Vollendung
+                  </span>
+                  <span class="text-xs font-mono text-neutral-400 tracking-wider">
+                    CHF 55.– / Kombi CHF 98.–
+                  </span>
+                </div>
+
+                <h3 class="font-cinzel text-2xl sm:text-4xl font-bold text-white tracking-wide group-hover:text-aurum-300 transition-colors">
+                  Haar-Styling & Royale Bartzeremonie
+                </h3>
+
+                <p class="text-sm text-neutral-400 font-light leading-relaxed max-w-2xl">
+                  Das Barber-Ritual in Vollendung: Bartformung per Schere und Trimmer, scharfe Kantenrasur mit dem Rasiermesser, warme und kalte Tücher mit ätherischen Ölen sowie ein exklusives Finish mit handgefertigten Bartbalsamen und matten Matt-Pomaden.
+                </p>
+              </div>
+
+              <div class="lg:col-span-5 flex flex-col sm:flex-row lg:col-span-5 justify-end gap-4 border-t lg:border-t-0 lg:border-l border-white/5 pt-6 lg:pt-0 lg:pl-8">
+                <div class="space-y-1.5 text-xs text-neutral-300 font-light">
+                  <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-aurum-400 rotate-45"></span>
+                    <span>Traditionelle Hot-Towel Nassrasur</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-aurum-400 rotate-45"></span>
+                    <span>Bart-Modellage & Konturschliff</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-aurum-400 rotate-45"></span>
+                    <span>High-End Pomaden- & Wax-Finish</span>
+                  </div>
+                </div>
+
+                <button
+                  onclick="openBookingModal('Styling & Bart')"
+                  class="mt-4 px-6 py-3 text-xs tracking-widest uppercase font-semibold text-charcoal-950 bg-aurum-400 hover:bg-aurum-300 transition-colors text-center w-full sm:w-auto"
+                >
+                  Styling-Ritual Buchen
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- FOTOGALERIE DER MEISTERWERKE (NEU) -->
+      <section id="galerie" class="py-28 px-6 lg:px-12 max-w-7xl mx-auto border-b border-white/5">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 mb-3">
+              <span class="w-6 h-[1px] bg-aurum-400"></span>
+              <span class="text-[10px] tracking-ultra uppercase text-aurum-400 font-semibold">Exklusive Einblicke</span>
+            </div>
+            <h2 class="font-cinzel text-3xl sm:text-5xl font-bold tracking-wide text-white uppercase">
+              Galerie des Ateliers
+            </h2>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-xs text-neutral-400 tracking-wider">Klicken zum Zoomen</span>
+            <span class="w-2 h-2 bg-aurum-400 rotate-45"></span>
+          </div>
+        </div>
+
+        <!-- Galerie-Raster mit 6 Meisterwerken -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Werk 1 -->
+          <div
+            onclick="openLightbox(0)"
+            class="group relative overflow-hidden bg-charcoal-900 border border-white/10 hover:border-aurum-400/60 transition-all duration-500 cursor-pointer"
+          >
+            <div class="aspect-[4/5] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=80"
+                alt="Traditionelle Klingenrasur und Konturenschnitt"
+                class="w-full h-full object-cover filter grayscale contrast-115 group-hover:scale-105 group-hover:filter-none transition-all duration-700"
+                loading="lazy"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80';"
+              />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+              <span class="text-[10px] tracking-ultra uppercase text-aurum-400 font-semibold">Rasur & Kontur</span>
+              <h3 class="font-cinzel text-lg text-white font-bold mt-1">Hot Towel & Straight Razor</h3>
+              <p class="text-xs text-neutral-300 font-light mt-1">Meisterhafte Schärfe mit warmer Duftkompresse</p>
+            </div>
+          </div>
+
+          <!-- Werk 2 -->
+          <div
+            onclick="openLightbox(1)"
+            class="group relative overflow-hidden bg-charcoal-900 border border-white/10 hover:border-aurum-400/60 transition-all duration-500 cursor-pointer"
+          >
+            <div class="aspect-[4/5] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80"
+                alt="Präziser Skin Fade Haarschnitt mit Scherenübergang"
+                class="w-full h-full object-cover filter grayscale contrast-115 group-hover:scale-105 group-hover:filter-none transition-all duration-700"
+                loading="lazy"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=80';"
+              />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+              <span class="text-[10px] tracking-ultra uppercase text-aurum-400 font-semibold">Haarschnitt</span>
+              <h3 class="font-cinzel text-lg text-white font-bold mt-1">Precision Texture Fade</h3>
+              <p class="text-xs text-neutral-300 font-light mt-1">Nahtloser Übergang und matte Struktur</p>
+            </div>
+          </div>
+
+          <!-- Werk 3 -->
+          <div
+            onclick="openLightbox(2)"
+            class="group relative overflow-hidden bg-charcoal-900 border border-white/10 hover:border-aurum-400/60 transition-all duration-500 cursor-pointer"
+          >
+            <div class="aspect-[4/5] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&q=80"
+                alt="Privates Salon-Interieur mit schwerem Leder und Spiegel"
+                class="w-full h-full object-cover filter grayscale contrast-115 group-hover:scale-105 group-hover:filter-none transition-all duration-700"
+                loading="lazy"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80';"
+              />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+              <span class="text-[10px] tracking-ultra uppercase text-aurum-400 font-semibold">Salon Atmosphäre</span>
+              <h3 class="font-cinzel text-lg text-white font-bold mt-1">Private Barber Suite</h3>
+              <p class="text-xs text-neutral-300 font-light mt-1">Echtholz, Lederstühle und diskreter Service</p>
+            </div>
+          </div>
+
+          <!-- Werk 4 -->
+          <div
+            onclick="openLightbox(3)"
+            class="group relative overflow-hidden bg-charcoal-900 border border-white/10 hover:border-aurum-400/60 transition-all duration-500 cursor-pointer"
+          >
+            <div class="aspect-[4/5] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=80"
+                alt="Klassisches Styling mit Wachs und Scheitel"
+                class="w-full h-full object-cover filter grayscale contrast-115 group-hover:scale-105 group-hover:filter-none transition-all duration-700"
+                loading="lazy"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80';"
+              />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+              <span class="text-[10px] tracking-ultra uppercase text-aurum-400 font-semibold">Gentleman Style</span>
+              <h3 class="font-cinzel text-lg text-white font-bold mt-1">Executive Side Part</h3>
+              <p class="text-xs text-neutral-300 font-light mt-1">Klassische Silhouette mit mattem Halt</p>
+            </div>
+          </div>
+
+          <!-- Werk 5 -->
+          <div
+            onclick="openLightbox(4)"
+            class="group relative overflow-hidden bg-charcoal-900 border border-white/10 hover:border-aurum-400/60 transition-all duration-500 cursor-pointer"
+          >
+            <div class="aspect-[4/5] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80"
+                alt="Custom Coloration und sanfte Strähnenveredelung"
+                class="w-full h-full object-cover filter grayscale contrast-115 group-hover:scale-105 group-hover:filter-none transition-all duration-700"
+                loading="lazy"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80';"
+              />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+              <span class="text-[10px] tracking-ultra uppercase text-aurum-400 font-semibold">Haute Coiffure</span>
+              <h3 class="font-cinzel text-lg text-white font-bold mt-1">Sunlit Balayage & Gloss</h3>
+              <p class="text-xs text-neutral-300 font-light mt-1">Fließende Lichtreflexe und Glanzveredelung</p>
+            </div>
+          </div>
+
+          <!-- Werk 6 -->
+          <div
+            onclick="openLightbox(5)"
+            class="group relative overflow-hidden bg-charcoal-900 border border-white/10 hover:border-aurum-400/60 transition-all duration-500 cursor-pointer"
+          >
+            <div class="aspect-[4/5] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=80"
+                alt="Bart-Formgebung und Präzisionsrasur"
+                class="w-full h-full object-cover filter grayscale contrast-115 group-hover:scale-105 group-hover:filter-none transition-all duration-700"
+                loading="lazy"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80';"
+              />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+              <span class="text-[10px] tracking-ultra uppercase text-aurum-400 font-semibold">Bartkultur</span>
+              <h3 class="font-cinzel text-lg text-white font-bold mt-1">Sculpted Beard & Oil Care</h3>
+              <p class="text-xs text-neutral-300 font-light mt-1">Symmetrische Bartarchitektur mit Bio-Arganöl</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- GOOGLE MAPS KARTE & FUSSWEG-GUIDE (MITTE VON BERN) -->
+      <section id="anreise" class="py-28 px-6 lg:px-12 max-w-7xl mx-auto border-b border-white/5">
+        
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 mb-3">
+              <span class="w-6 h-[1px] bg-aurum-400"></span>
+              <span class="text-[10px] tracking-ultra uppercase text-aurum-400 font-semibold">Lage & Anfahrt</span>
+            </div>
+            <h2 class="font-cinzel text-3xl sm:text-5xl font-bold tracking-wide text-white uppercase">
+              Wo man hinlaufen soll
+            </h2>
+          </div>
+          <p class="text-xs text-neutral-400 tracking-widest uppercase font-light max-w-sm">
+            Mitten im Herzen von Bern. Nur wenige Schritte durch die geschützten Berner Lauben.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+          
+          <!-- Linke Spalte: Schritt-für-Schritt Fussweg-Leitfaden (5 Spalten) -->
+          <div class="lg:col-span-5 flex flex-col justify-between space-y-8 bg-charcoal-900 border border-white/10 p-8 sm:p-10">
+            
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <span class="w-2.5 h-2.5 bg-aurum-400 rotate-45"></span>
+                <span class="font-cinzel text-xl text-white font-bold tracking-wider uppercase">Fussweg-Leitfaden</span>
+              </div>
+              <p class="text-xs text-neutral-400 font-light leading-relaxed">
+                Unser Atelier liegt direkt an der geschichtsträchtigen Kramgasse / Bärenplatz-Achse im Zentrum von Bern. Folgen Sie dieser einfachen Route:
+              </p>
+
+              <!-- Die 3 Weg-Schritte -->
+              <div class="space-y-6 mt-8 relative">
+                <!-- Verbindende zarte Vertikallinie -->
+                <div class="absolute left-3.5 top-3 bottom-3 w-[1px] bg-gradient-to-b from-aurum-400 via-aurum-400/40 to-transparent"></div>
+
+                <!-- Schritt 1 -->
+                <div class="relative flex items-start gap-4">
+                  <div class="w-7 h-7 rounded-full bg-charcoal-950 border border-aurum-400 text-aurum-400 font-mono text-xs flex items-center justify-center font-bold flex-shrink-0 z-10">
+                    1
+                  </div>
+                  <div>
+                    <h3 class="text-xs tracking-widest uppercase font-semibold text-white">Start: Hauptbahnhof Bern</h3>
+                    <p class="text-xs text-neutral-400 font-light mt-1">
+                      Verlassen Sie den Bahnhof über den Baldachin Richtung Spitalgasse / Bärenplatz.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Schritt 2 -->
+                <div class="relative flex items-start gap-4">
+                  <div class="w-7 h-7 rounded-full bg-charcoal-950 border border-aurum-400 text-aurum-400 font-mono text-xs flex items-center justify-center font-bold flex-shrink-0 z-10">
+                    2
+                  </div>
+                  <div>
+                    <h3 class="text-xs tracking-widest uppercase font-semibold text-white">Über den Bärenplatz zum Zytglogge</h3>
+                    <p class="text-xs text-neutral-400 font-light mt-1">
+                      Spazieren Sie gemütlich ca. 3 Minuten geradeaus unter den Berner Arkaden (Lauben) an Zaffaraya & Käfigturm vorbei.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Schritt 3 -->
+                <div class="relative flex items-start gap-4">
+                  <div class="w-7 h-7 rounded-full bg-aurum-400 text-charcoal-950 font-mono text-xs flex items-center justify-center font-bold flex-shrink-0 z-10 shadow-lg shadow-aurum-400/30">
+                    3
+                  </div>
+                  <div>
+                    <h3 class="text-xs tracking-widest uppercase font-semibold text-aurum-300">Ankunft: Voluma Hair Atelier</h3>
+                    <p class="text-xs text-neutral-400 font-light mt-1">
+                      Rechte Arkadenseite bei der Kramgasse 24. Beachten Sie den eleganten, beleuchteten Gold-Pylon im Eingang.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Schnell-Info Boxen -->
+            <div class="pt-6 border-t border-white/5 space-y-4">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="p-3 bg-charcoal-950 border border-white/5">
+                  <div class="text-[10px] uppercase tracking-widest text-neutral-500">Gehzeit ab Hbf</div>
+                  <div class="font-cinzel text-base text-aurum-300 font-bold mt-0.5">4 Minuten</div>
+                </div>
+                <div class="p-3 bg-charcoal-950 border border-white/5">
+                  <div class="text-[10px] uppercase tracking-widest text-neutral-500">Tram & Bus</div>
+                  <div class="font-cinzel text-base text-aurum-300 font-bold mt-0.5">Halt Zytglogge</div>
+                </div>
+              </div>
+
+              <!-- Button zu externem Google Maps Link -->
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=Kramgasse+24+Bern+Schweiz"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 bg-charcoal-950 hover:bg-charcoal-800 text-aurum-400 hover:text-aurum-300 border border-aurum-400/40 text-xs tracking-widest uppercase font-semibold transition-colors"
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+                <span>Route in Google Maps öffnen</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Rechte Spalte: Interaktive Google Maps Karte mit Dark-Mode Styling (7 Spalten) -->
+          <div class="lg:col-span-7 flex flex-col justify-between bg-charcoal-900 border border-white/10 overflow-hidden relative group">
+            
+            <!-- Map Container Header Overlay -->
+            <div class="p-5 bg-charcoal-950/90 border-b border-white/5 flex items-center justify-between z-10">
+              <div class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-aurum-400 animate-ping"></span>
+                <span class="text-xs tracking-widest uppercase font-semibold text-white">Google Maps &bull; Bern Zentrum (Kramgasse / Bärenplatz)</span>
+              </div>
+              <span class="text-[10px] font-mono text-neutral-400 uppercase tracking-widest hidden sm:inline">Koordinaten: 46.9480° N, 7.4474° E</span>
+            </div>
+
+            <!-- Map Iframe with Dark Mode Filter -->
+            <div class="relative w-full h-[450px] sm:h-[500px] overflow-hidden bg-charcoal-950">
+              <iframe
+                title="Google Maps Bern Zentrum"
+                src="https://maps.google.com/maps?q=Kramgasse+Bern+Schweiz&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                class="w-full h-full border-0 dark-map-frame"
+                loading="lazy"
+                allowfullscreen
+              ></iframe>
+
+              <!-- Floating Pin / Overlay Card inside the Map -->
+              <div class="absolute bottom-6 left-6 right-6 sm:right-auto bg-charcoal-950/95 border border-aurum-400/50 p-4 shadow-2xl backdrop-blur-md max-w-sm pointer-events-none">
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded bg-aurum-400 text-charcoal-950 flex items-center justify-center flex-shrink-0 font-bold">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-cinzel text-sm text-white font-bold">Voluma Hair Bern</h4>
+                    <p class="text-[11px] text-neutral-300 font-light mt-0.5">Kramgasse 24, 3011 Bern</p>
+                    <p class="text-[10px] text-aurum-400 uppercase tracking-widest font-mono mt-1">&bull; Mitten im UNESCO-Welterbe der Berner Altstadt</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Untere Leiste -->
+            <div class="p-4 bg-charcoal-950 border-t border-white/5 flex flex-wrap items-center justify-between gap-3 text-xs text-neutral-400">
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-aurum-400"></span>
+                <span>Wettergeschützt dank historischer Berner Lauben (Arkaden)</span>
+              </div>
+              <span class="text-[11px] text-neutral-500 font-mono">Parkhaus Casino & Bahnhofplatz in Gehdistanz</span>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- HANDWERK & SALON ATMOSPHÄRE -->
+      <section id="craft" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto border-b border-white/5">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-5 space-y-6">
+            <span class="text-[10px] tracking-ultra uppercase text-aurum-400 font-semibold block">
+              Kompromisslose Haltung
+            </span>
+            <h2 class="font-cinzel text-3xl sm:text-4xl text-white font-bold leading-tight uppercase">
+              Wo Handwerk zur Signatur wird.
+            </h2>
+            <div class="w-12 h-[1px] bg-aurum-400"></div>
+            <p class="text-sm text-neutral-400 font-light leading-relaxed">
+              Bei Voluma Hair gibt es keine Massenabfertigung. Jeder Platz ist ein privater Rückzugsort mit handgefertigten Leder-Barbersesseln, gedämpftem warmem Licht und einer Selektion erlesener Whiskys, Espressi oder Schweizer Bergquellwasser.
+            </p>
+            <div class="pt-4 grid grid-cols-2 gap-4">
+              <div class="p-4 bg-charcoal-900 border border-white/5">
+                <div class="font-cinzel text-xl text-aurum-400 font-bold">100%</div>
+                <div class="text-[11px] uppercase tracking-wider text-neutral-400 mt-1">Japanische Scheren</div>
+              </div>
+              <div class="p-4 bg-charcoal-900 border border-white/5">
+                <div class="font-cinzel text-xl text-aurum-400 font-bold">Bio</div>
+                <div class="text-[11px] uppercase tracking-wider text-neutral-400 mt-1">Öle & Wachse</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 grid grid-cols-2 gap-4">
+            <div class="space-y-4">
+              <div class="overflow-hidden border border-white/10 group">
+                <img
+                  src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80"
+                  alt="Barber Werkzeuge und Rasiermesser"
+                  class="w-full h-64 object-cover filter grayscale contrast-125 group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              <div class="p-5 bg-charcoal-900 border border-white/5">
+                <span class="text-[10px] uppercase tracking-ultra text-aurum-400 font-mono">Equipment</span>
+                <p class="font-cinzel text-sm text-neutral-200 mt-1">Geschmiedete Klingen & Naturborsten</p>
+              </div>
+            </div>
+
+            <div class="space-y-4 pt-8">
+              <div class="p-5 bg-charcoal-900 border border-white/5">
+                <span class="text-[10px] uppercase tracking-ultra text-aurum-400 font-mono">Atmosphäre</span>
+                <p class="font-cinzel text-sm text-neutral-200 mt-1">Dunkles Nussbaumholz & schwerer Samt</p>
+              </div>
+              <div class="overflow-hidden border border-white/10 group">
+                <img
+                  src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80"
+                  alt="Barbershop Interieur"
+                  class="w-full h-64 object-cover filter grayscale contrast-125 group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ATELIER PHILOSOPHIE BANNER -->
+      <section id="philosophy" class="py-20 px-6 max-w-4xl mx-auto text-center border-b border-white/5">
+        <span class="text-[10px] tracking-ultra uppercase text-aurum-400 font-semibold block mb-4">
+          Das Voluma Versprechen
+        </span>
+        <blockquote class="font-cinzel text-2xl sm:text-3xl text-neutral-100 font-normal leading-relaxed italic">
+          «Ein echter Haarschnitt verliert nicht nach zwei Tagen seine Form, sondern gewinnt mit jedem Tag an Persönlichkeit.»
+        </blockquote>
+        <div class="mt-6 flex items-center justify-center gap-3">
+          <span class="w-8 h-[1px] bg-white/20"></span>
+          <span class="text-xs uppercase tracking-widest text-neutral-400 font-mono">Voluma Hair Master Atelier Bern</span>
+          <span class="w-8 h-[1px] bg-white/20"></span>
+        </div>
+      </section>
+    </main>
+
+    <!-- SCHWEBENDER (STICKY) DUMMY-BUTTON UNTEN RECHTS FÜR „ONLINE BUCHEN“ -->
+    <aside class="fixed bottom-6 right-6 z-50">
+      <button
+        onclick="openBookingModal()"
+        aria-label="Online buchen"
+        class="group flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-aurum-400 via-aurum-300 to-copper-400 text-charcoal-950 font-bold text-xs tracking-widest uppercase rounded-none border border-aurum-200 shadow-2xl shadow-aurum-400/30 hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer"
+      >
+        <span class="relative flex h-2.5 w-2.5">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-charcoal-950 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-charcoal-950"></span>
+        </span>
+        <span class="font-cinzel tracking-wider">Online buchen</span>
+        <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+    </aside>
+
+    <!-- DUNKLER, AUFGERÄUMTER FOOTER MIT KONTAKTANGABEN -->
+    <footer id="kontakt" class="bg-charcoal-950 border-t border-white/10 pt-20 pb-14 text-neutral-400">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-white/5">
+          
+          <!-- Spalte 1: Brand & Credo (5 Spalten) -->
+          <div class="md:col-span-5 space-y-4">
+            <div class="flex items-center gap-2.5">
+              <span class="w-2.5 h-2.5 bg-aurum-400 rotate-45"></span>
+              <span class="font-cinzel text-2xl font-bold tracking-[0.25em] text-white">
+                VOLUMA HAIR
+              </span>
+            </div>
+            <p class="text-[10px] tracking-ultra uppercase text-aurum-400 font-medium">
+              Bespoke Barbershop & Haute Coiffure
+            </p>
+            <p class="text-xs text-neutral-400 font-light leading-relaxed max-w-sm pt-2">
+              Die Verbindung traditioneller Barbierkunst und zeitgenössischer Haarästhetik. Gezielte Schnitttechniken, Hot-Towel Shaves und erlesene Pflegeessenzen im Herzen der Berner Altstadt.
+            </p>
+            
+            <div class="flex items-center gap-3 pt-4">
+              <a href="#" aria-label="Instagram" class="w-9 h-9 border border-white/10 hover:border-aurum-400 flex items-center justify-center text-neutral-400 hover:text-aurum-400 transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="Facebook" class="w-9 h-9 border border-white/10 hover:border-aurum-400 flex items-center justify-center text-neutral-400 hover:text-aurum-400 transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Spalte 2: Adresse & Anreise (4 Spalten) -->
+          <div class="md:col-span-4 space-y-3">
+            <span class="text-[10px] tracking-ultra uppercase text-neutral-200 font-semibold block">
+              Atelier & Anreise
+            </span>
+            <div class="text-xs text-neutral-400 font-light leading-relaxed space-y-2">
+              <p class="text-neutral-200 font-medium">Voluma Hair Bern</p>
+              <p>Kramgasse 24 (unter den Lauben)<br />3011 Bern Zentrum &bull; Schweiz</p>
+              <div class="pt-2 space-y-1">
+                <p>
+                  <span class="text-neutral-500 uppercase tracking-widest text-[10px]">Telefon:</span><br />
+                  <a href="tel:+41319610000" class="text-neutral-200 hover:text-aurum-400 transition-colors">+41 (0)31 961 00 00</a>
+                </p>
+                <p>
+                  <span class="text-neutral-500 uppercase tracking-widest text-[10px]">E-Mail:</span><br />
+                  <a href="mailto:bern@voluma-hair.ch" class="text-neutral-200 hover:text-aurum-400 transition-colors">bern@voluma-hair.ch</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spalte 3: Salonzeiten (3 Spalten) -->
+          <div class="md:col-span-3 space-y-3">
+            <span class="text-[10px] tracking-ultra uppercase text-neutral-200 font-semibold block">
+              Öffnungszeiten
+            </span>
+            <div class="text-xs text-neutral-400 font-light space-y-2.5">
+              <div class="flex justify-between border-b border-white/5 pb-1.5">
+                <span class="text-neutral-400">Dienstag – Freitag</span>
+                <span class="text-neutral-100 font-mono">09:00 – 19:30</span>
+              </div>
+              <div class="flex justify-between border-b border-white/5 pb-1.5">
+                <span class="text-neutral-400">Samstag</span>
+                <span class="text-neutral-100 font-mono">08:00 – 16:30</span>
+              </div>
+              <div class="flex justify-between text-neutral-500 pt-1">
+                <span>Sonntag & Montag</span>
+                <span class="italic text-neutral-600">Geschlossen</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Subfooter -->
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-neutral-500 font-light gap-4">
+          <p>© 2026 Voluma Hair Bern. Alle Rechte vorbehalten. (Visuelle Demo)</p>
+          <div class="flex items-center gap-6 text-[10px] tracking-widest uppercase">
+            <a href="#" onclick="showNotice('Datenschutzhinweis'); return false;" class="hover:text-neutral-300">Datenschutz</a>
+            <a href="#" onclick="showNotice('Impressum'); return false;" class="hover:text-neutral-300">Impressum</a>
+            <a href="#" class="hover:text-aurum-400 flex items-center gap-1">
+              <span>Nach Oben</span>
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <polyline points="18 15 12 9 6 15"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- INTERAKTIVES LIGHTBOX-MODAL FÜR DIE GALERIE (NEU) -->
+    <div id="galleryLightbox" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+      <div onclick="closeLightbox()" class="absolute inset-0 bg-black/95 backdrop-blur-md transition-opacity"></div>
+      
+      <div class="relative max-w-4xl w-full z-10 flex flex-col items-center">
+        <!-- Close Button -->
+        <button
+          onclick="closeLightbox()"
+          class="absolute -top-12 right-0 text-neutral-400 hover:text-white transition-colors flex items-center gap-1 text-xs uppercase tracking-widest"
+          aria-label="Schliessen"
+        >
+          <span>Schliessen</span>
+          <svg class="w-5 h-5 ml-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+
+        <!-- Bild-Container -->
+        <div class="relative w-full max-h-[75vh] flex items-center justify-center overflow-hidden border border-white/10 bg-charcoal-950">
+          <img id="lightboxImg" src="" alt="Grossansicht Galerie" class="max-h-[75vh] w-auto object-contain transition-all duration-300" />
+          
+          <!-- Prev Button -->
+          <button
+            onclick="prevLightboxImg()"
+            class="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-charcoal-950/80 border border-white/10 hover:border-aurum-400 text-white transition-colors"
+            aria-label="Vorheriges Bild"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <!-- Next Button -->
+          <button
+            onclick="nextLightboxImg()"
+            class="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-charcoal-950/80 border border-white/10 hover:border-aurum-400 text-white transition-colors"
+            aria-label="Nächstes Bild"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Info Bar unter dem Bild -->
+        <div class="w-full bg-charcoal-900 border-x border-b border-white/10 p-5 flex items-center justify-between">
+          <div>
+            <span id="lightboxCategory" class="text-[10px] tracking-ultra uppercase text-aurum-400 font-semibold block"></span>
+            <h3 id="lightboxTitle" class="font-cinzel text-lg text-white font-bold"></h3>
+            <p id="lightboxDesc" class="text-xs text-neutral-400 font-light mt-0.5"></p>
+          </div>
+          <button
+            onclick="closeLightbox(); openBookingModal();"
+            class="px-5 py-2.5 bg-aurum-400 hover:bg-aurum-300 text-charcoal-950 font-bold text-xs tracking-widest uppercase transition-colors whitespace-nowrap"
+          >
+            Diesen Look Buchen
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- VISUELLES DUMMY MODAL: DARK MODE BOOKING -->
+    <div id="bookingModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+      <div onclick="closeBookingModal()" class="absolute inset-0 bg-black/80 backdrop-blur-sm transition-opacity"></div>
+      
+      <div class="relative bg-charcoal-900 border border-white/10 max-w-lg w-full p-8 sm:p-10 shadow-2xl z-10 max-h-[92vh] overflow-y-auto">
+        <!-- Close Button -->
+        <button
+          onclick="closeBookingModal()"
+          class="absolute top-6 right-6 text-neutral-400 hover:text-white transition-colors"
+          aria-label="Schliessen"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+
+        <div class="mb-8">
+          <span class="text-[10px] tracking-ultra uppercase text-aurum-400 font-semibold block mb-1">
+            Online Reservierung &bull; Bern Zentrum
+          </span>
+          <h3 class="font-cinzel text-2xl sm:text-3xl text-white font-bold uppercase">
+            Terminanfrage
+          </h3>
+          <p class="text-xs text-neutral-400 font-light mt-1">
+            Wählen Sie Ihren gewünschten Service und Barbershop-Termin in Bern.
+          </p>
+          <div class="w-12 h-[1px] bg-aurum-400 mt-4"></div>
+        </div>
+
+        <form onsubmit="handleDummySubmit(event)" class="space-y-5 text-xs text-neutral-200">
+          <div>
+            <label class="block tracking-widest uppercase text-[10px] text-neutral-400 mb-1.5 font-medium">
+              Dienstleistung
+            </label>
+            <select id="serviceSelect" class="w-full bg-charcoal-950 border border-white/15 p-3.5 text-neutral-200 focus:outline-none focus:border-aurum-400">
+              <option value="Schnitt">01 – Präzisionsschnitt & Skin Fade</option>
+              <option value="Coloration">02 – Custom Coloration & Grey Blending</option>
+              <option value="Styling & Bart">03 – Styling & Royale Bartzeremonie</option>
+              <option value="Komplett">Master Kombi: Schnitt & Hot-Towel Rasur</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block tracking-widest uppercase text-[10px] text-neutral-400 mb-1.5 font-medium">
+                Datum
+              </label>
+              <input
+                type="date"
+                class="w-full bg-charcoal-950 border border-white/15 p-3.5 text-neutral-200 focus:outline-none focus:border-aurum-400"
+                value="2026-10-02"
+              />
+            </div>
+            <div>
+              <label class="block tracking-widest uppercase text-[10px] text-neutral-400 mb-1.5 font-medium">
+                Uhrzeit
+              </label>
+              <select class="w-full bg-charcoal-950 border border-white/15 p-3.5 text-neutral-200 focus:outline-none focus:border-aurum-400">
+                <option>10:00 Uhr</option>
+                <option>11:30 Uhr</option>
+                <option>14:00 Uhr</option>
+                <option>16:00 Uhr</option>
+                <option>17:30 Uhr</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block tracking-widest uppercase text-[10px] text-neutral-400 mb-1.5 font-medium">
+              Vollständiger Name
+            </label>
+            <input
+              type="text"
+              placeholder="z.B. Adrian Schneider"
+              class="w-full bg-charcoal-950 border border-white/15 p-3.5 text-neutral-200 placeholder:text-neutral-600 focus:outline-none focus:border-aurum-400"
+              required
+            />
+          </div>
+
+          <div>
+            <label class="block tracking-widest uppercase text-[10px] text-neutral-400 mb-1.5 font-medium">
+              Telefonnummer
+            </label>
+            <input
+              type="tel"
+              placeholder="+41 79 000 00 00"
+              class="w-full bg-charcoal-950 border border-white/15 p-3.5 text-neutral-200 placeholder:text-neutral-600 focus:outline-none focus:border-aurum-400"
+              required
+            />
+          </div>
+
+          <div class="pt-2">
+            <button
+              type="submit"
+              class="w-full py-4 bg-gradient-to-r from-aurum-400 via-aurum-300 to-copper-400 hover:from-aurum-300 hover:to-aurum-400 text-charcoal-950 font-bold text-xs tracking-widest uppercase transition-all shadow-lg shadow-aurum-400/20"
+            >
+              Terminanfrage senden
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div
+      id="toast"
+      class="fixed top-6 right-6 z-50 bg-charcoal-900 border border-aurum-400/70 text-white px-5 py-4 shadow-2xl transition-all duration-300 transform translate-y-[-150%] opacity-0 flex items-center gap-3 text-xs"
+    >
+      <div class="w-2 h-2 bg-aurum-400 rotate-45"></div>
+      <div id="toastMessage">Anfrage erfolgreich übermittelt.</div>
+    </div>
+
+    <!-- VANILLA JAVASCRIPT: REIN OPTISCHE EFFEKTE -->
+    <script>
+      // Galerie Daten für Lightbox
+      const galleryData = [
+        {
+          src: 'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1200&q=85',
+          category: 'Rasur & Kontur',
+          title: 'Hot Towel & Straight Razor',
+          desc: 'Meisterhafte Schärfe mit warmer Duftkompresse und pflegendem Balsam.'
+        },
+        {
+          src: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=85',
+          category: 'Haarschnitt',
+          title: 'Precision Texture Fade',
+          desc: 'Nahtloser Übergang von Null mit handgefertigter Struktur im Deckhaar.'
+        },
+        {
+          src: 'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1200&q=85',
+          category: 'Salon Atmosphäre',
+          title: 'Private Barber Suite',
+          desc: 'Echtholz, Lederstühle und diskreter Service mitten in der Berner Altstadt.'
+        },
+        {
+          src: 'https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1200&q=85',
+          category: 'Gentleman Style',
+          title: 'Executive Side Part',
+          desc: 'Klassische Silhouette mit mattem Halt und natürlichem Glanzfinish.'
+        },
+        {
+          src: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=85',
+          category: 'Haute Coiffure',
+          title: 'Sunlit Balayage & Gloss',
+          desc: 'Fließende Lichtreflexe und Glanzveredelung für ausdrucksstarke Nuancen.'
+        },
+        {
+          src: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1200&q=85',
+          category: 'Bartkultur',
+          title: 'Sculpted Beard & Oil Care',
+          desc: 'Symmetrische Bartarchitektur mit warmen Kompressen und Bio-Arganöl.'
+        }
+      ];
+
+      let currentLightboxIndex = 0;
+
+      function openLightbox(index) {
+        currentLightboxIndex = index;
+        updateLightboxContent();
+        document.getElementById('galleryLightbox').classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        document.getElementById('galleryLightbox').classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+
+      function updateLightboxContent() {
+        const item = galleryData[currentLightboxIndex];
+        document.getElementById('lightboxImg').src = item.src;
+        document.getElementById('lightboxCategory').textContent = item.category;
+        document.getElementById('lightboxTitle').textContent = item.title;
+        document.getElementById('lightboxDesc').textContent = item.desc;
+      }
+
+      function nextLightboxImg() {
+        currentLightboxIndex = (currentLightboxIndex + 1) % galleryData.length;
+        updateLightboxContent();
+      }
+
+      function prevLightboxImg() {
+        currentLightboxIndex = (currentLightboxIndex - 1 + galleryData.length) % galleryData.length;
+        updateLightboxContent();
+      }
+
+      function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        const hamburger = document.getElementById('hamburgerIcon');
+        const close = document.getElementById('closeIcon');
+        const isHidden = menu.classList.contains('hidden');
+        if (isHidden) {
+          menu.classList.remove('hidden');
+          hamburger.classList.add('hidden');
+          close.classList.remove('hidden');
+        } else {
+          closeMobileMenu();
+        }
+      }
+
+      function closeMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        const hamburger = document.getElementById('hamburgerIcon');
+        const close = document.getElementById('closeIcon');
+        menu.classList.add('hidden');
+        hamburger.classList.remove('hidden');
+        close.classList.add('hidden');
+      }
+
+      function openBookingModal(serviceName = '') {
+        const modal = document.getElementById('bookingModal');
+        const select = document.getElementById('serviceSelect');
+        if (serviceName && select) {
+          for (let i = 0; i < select.options.length; i++) {
+            if (select.options[i].value === serviceName) {
+              select.selectedIndex = i;
+              break;
+            }
+          }
+        }
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeBookingModal() {
+        const modal = document.getElementById('bookingModal');
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+
+      function handleDummySubmit(event) {
+        event.preventDefault();
+        closeBookingModal();
+        showNotice('Ihre Terminanfrage in Bern wurde vorgemerkt (Visuelle Demo).');
+      }
+
+      function showNotice(text) {
+        const toast = document.getElementById('toast');
+        const msg = document.getElementById('toastMessage');
+        msg.textContent = text;
+        toast.classList.remove('translate-y-[-150%]', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('translate-y-0', 'opacity-100');
+          toast.classList.add('translate-y-[-150%]', 'opacity-0');
+        }, 3600);
+      }
+
+      // Keyboard navigation (Escape to close, Arrows for Lightbox)
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeBookingModal();
+          closeLightbox();
+          closeMobileMenu();
+        } else if (e.key === 'ArrowRight' && !document.getElementById('galleryLightbox').classList.contains('hidden')) {
+          nextLightboxImg();
+        } else if (e.key === 'ArrowLeft' && !document.getElementById('galleryLightbox').classList.contains('hidden')) {
+          prevLightboxImg();
+        }
+      });
+    </script>
+  </body>
+</html>
